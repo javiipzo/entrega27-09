@@ -13,4 +13,13 @@ class TestMyCalculator(unittest.TestCase):
         self.calc.add(1, 3)
     # Comprobamos si el valor es el que esperamos
         self.assertEqual(4, self.calc.value)
-    bfahsbfa= 7
+
+    def test_multiply_method(self):
+        self.calc.multiply(2, 3)
+        self.assertEqual(6, self.calc.value)
+    def test_divide_method(self):
+        self.calc.divide(8,2)
+        self.assertEqual(4, self.calc.value)
+    def test_factorial_method(self):
+        self.calc.factorial(4)
+        self.assertEqual(24,self.calc.value)
